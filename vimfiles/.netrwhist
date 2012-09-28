@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='C:/Users/ethan.mallove/Documents/workspace-sts-2.6.1.Japod'
+let g:netrw_dirhist_2='C:/Users/ethan.mallove/Documents/workspace-sts-2.6.1.Japod/IcapRESTApp'
+let g:netrw_dirhist_3='C:/Users/ethan.mallove/Documents/workspace-sts-2.6.1.Japod/IcapRESTApp/src'
+let g:netrw_dirhist_4='C:/Users/ethan.mallove/Documents/workspace-sts-2.6.1.Japod/IcapRESTApp/src/main'
+let g:netrw_dirhist_5='C:/Users/ethan.mallove/Documents/workspace-sts-2.6.1.Japod/IcapRESTApp/src/main/webapp/ckeditor/_source/plugins/xml'
+let g:netrw_dirhist_6='C:/Users/ethan.mallove/Documents/workspace-sts-2.6.1.Japod/IcapRESTApp/src/main/webapp/draw2d/normal/demo/css'
