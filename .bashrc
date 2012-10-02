@@ -32,3 +32,5 @@ export CLICOLOR=1
 
 # Colors directories, but what about zip files, pictures, mp3s, etc.
 export LSCOLORS=Gxfxcxdxbxegedabagacad
+
+source ~/.git-completion.bash
