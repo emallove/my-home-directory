@@ -35,3 +35,15 @@ autocmd BufNewFile,BufRead * set path=.**
 
 " Wed Sep 26 15:18:50 EDT 2012
 set cscopequickfix=s-,c-,d-,i-,t-,e-
+
+
+" worthwhile?
+" Thu Oct  4 11:50:55 EDT 2012
+runtime ftplugin/man.vim
+
+" Thu Oct  4 11:50:44 EDT 2012
+set number
+
+" Sat Oct 13 11:24:56 PDT 2012
+autocmd VimEnter * cscope add cscope.out
+autocmd VimEnter * set tags=./TAGS,TAGS

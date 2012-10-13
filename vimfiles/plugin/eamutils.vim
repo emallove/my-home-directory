@@ -116,3 +116,20 @@ nnoremap <F5> "=strftime("%a, %d %b %Y %H:%M:%S")<CR>PI----- o
 " endfunction
 " 
 
+
+" Wrap visual selection in an HTML tag.
+vmap <Leader>w <Esc>:call VisualHTMLTagWrap()<CR>
+function! VisualHTMLTagWrap()
+  let tag = input("Tag to wrap block: ")
+  if len(tag) > 0
+    normal `>
+    if &selection == 'exclusive'
+      exe "normal i</".tag.">"
+    else
+      exe "normal a</".tag.">"
+    endif
+    normal `<
+    exe "normal i<".tag.">"
+    normal `<
+  endif
+endfunction
