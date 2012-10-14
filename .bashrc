@@ -7,6 +7,8 @@ PATH=$PATH:/Applications/MacVim.app/Contents/MacOS
 PATH=$PATH:$HOME/bin:/Applications/GitX.app/Contents/MacOS/
 PATH=$PATH:/Applications/
 PATH=$PATH:/opt/local/bin
+PATH=$PATH:/Applications/MacPorts/iTerm2.app/Contents/MacOS/
+
 
 # Sun Oct  7 15:38:45 EDT 2012
 PATH=$PATH:/opt/local/apache2/bin

@@ -47,3 +47,10 @@ set number
 " Sat Oct 13 11:24:56 PDT 2012
 autocmd VimEnter * cscope add cscope.out
 autocmd VimEnter * set tags=./TAGS,TAGS
+
+" everything after the ",d" was recorded into the q register
+" and pasted using "qp after the ",d" for the map setting!
+"
+" ,d - "d" is for debug
+" nmap <leader>d PI		puts "A = "opI		ap o
+nmap <leader>d oputs p0Elli__FILE__ + ":" + __LINE__.to_s + " A = "oap p
