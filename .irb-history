@@ -1,0 +1,200 @@
+ap health_plans
+health_plans[1]
+health_plans[1].attributes
+ap health_plans[1].attributes
+@drugs
+@drugs = convert_drug_list_to_objects(drug_list)
+@publisher_template.spotlight_drug_ids
+    @publisher_template = @publisher_formulary.publisher_template
+mySP = Publisher::SpirivaController.new
+ap @publisher_formulary
+    health_plans = SitePlanStatus.get_plan_drug_status(@publisher_formulary)
+ap health_plans
+ap health_plans.size
+mySP.select_health_plans
+    @uhg_health_plan_ids = UhgHealthPlan.all.map(&:id)
+    @state = @publisher_formulary.state.present? ? @publisher_formulary.state : State.new(:id => '', :name => 'National')
+mySP.select_health_plans
+@publisher_formulary
+ap @publisher_formulary
+ap @publisher_formulary.state
+mySP.select_health_plans
+ap @publisher_formulary.state.present?
+mySP.select_health_plans
+ap mySP
+app.get '/publisher/spiriva_communicator/182633/select_health_plans'
+app.html_document.root
+app.html_document.root.to_s
+app.project_path(Project.first)
+app
+ap app
+ap app.session
+ENV
+pp ENV
+app.session
+ap app
+ap
+app
+app.class
+app.controller.cookies
+app.get 'login.cfm'
+app.get '/login.cfm'
+app.output
+app.get('/login.cfm')
+ap app.get('/login.cfm')
+pp app.get('/login.cfm')
+pp app.get('/')
+ap app.get('/')
+ap app.get_via_redirect('/')
+ENV
+pp ENV
+IntegrationTest#open_session
+myTest = ActionController::IntegrationTest.new
+myTest = ActionController::IntegrationTest
+myTest
+ap myTest
+ap ActionController::IntegrationTest
+myTest = ActionController::IntegrationTest.new
+myTest = ActionController::IntegrationTest.new(:default_test)
+ap myTest
+myTest.get('/')
+myTest.get_via_redirect('/')
+myTest.get_via_redirect('/restrictions/reports')
+myTest.get('/restrictions/reports')
+myTest.get('/restrictions/reports')
+app.get "/"
+app.class
+app.controller.params
+app.response.redirect_url
+app.post "/users/login", :user => {:login => 'tlb@foraker.com', :password => 't0etip!'}
+irb_exit
+app.get "/"
+app.controller.params
+app.response.redirect_url
+app.post "/users/logout", :user => {:login => 'tlb@foraker.com', :password => 't0etip!'}
+app.session
+app.get "https://pfizerformulary.test.fingertipformulary.com/login.cfm", :user => {:email => 'tlb@foraker.com', :password => 't0etip!'}
+app.response
+ap app.response
+ap app.response.url
+ap app.response.redirect?
+ap app.response.redirect_to
+ap app.response.redirect_to_full_url
+app.get "https://pfizerformulary.test.fingertipformulary.com/login.cfm", :email => 'tlb@foraker.com', :password => 't0etip!'
+app.class
+myHash = Hash.new
+myHash["email"] = "tlb@foraker.com"
+myHash["password"] = "t0etip!"
+app.get "https://pfizerformulary.test.fingertipformulary.com/login.cfm", myHash
+app.post "https://pfizerformulary.test.fingertipformulary.com/login.cfm", myHash
+app.response
+app.post "http://pfizerformulary.test.fingertipformula^C.com/login.cfm", myHash
+app.post "http://pfizerformulary.test.fingertipformula.com/login.cfm", myHash
+app.post "http://pfizerformulary.test.fingertipformula.com/login.cfm", url_encode(myHash)
+u myHash
+u "foo"
+require 'erb'
+u "foo"
+url_encode "foo"
+Object.url_encode("foo")
+include ERB::Util
+url_encode("Programming Ruby: The Pragmatic Programmer's Guide")
+app.post "http://pfizerformulary.test.fingertipformula.com/login.cfm", url_encode(myHash)
+app.post "http://pfizerformulary.test.fingertipformula.com/login.cfm", url_encode("&requestid=0&email=tlb@foraker.com&password=t0etip!&btnSubmitLogin=Sign In
+")
+app.post "http://pfizerformulary.test.fingertipformula.com/login.cfm", url_encode("&requestid=0&email=tlb@foraker.com&password=t0etip!&btnSubmitLogin=Sign In")
+app.response
+ap app.response
+app.post "https://pfizerformulary.test.fingertipformula.com/login.cfm", url_encode("requestid=0&email=tlb@foraker.com&password=t0etip!&btnSubmitLogin=Sign+In
+")
+app.post "https://pfizerformulary.test.fingertipformula.com/login.cfm", url_encode("requestid=0&email=tlb@foraker.com&password=t0etip!&btnSubmitLogin=Sign+In")
+gem.class
+gm
+ap gem
+ap gem.classify
+RAILS_ROOT
+RAILS_ROOT
+RAILS_ENV
+require 'spec_helper'
+quit
+quit
+quit
+require 'rubygems'
+require 'webrat'
+include Webrat::Methods
+include Webrat::Matchers
+Webrat.configure do |config|
+  config.mode = :mechanize
+end
+visit 'http://gmail.com'
+ap ENV
+pp ENV
+ENV[GEM_HOME] += "/home/emallove/ethans-gem-repo/gems"
+ENV["GEM_HOME"] += ":/home/emallove/ethans-gem-repo/gems"
+require 'webrat'
+!pp
+pp ENV
+quit
+require 'webrat'
+pp ENV
+require 'rubygems'
+require 'webrat'
+system("gem list"
+);
+system("gem list");
+puts 1
+\q
+quit
+require 'webrat'
+quit
+require 'webrat'
+ap ENV
+pp ENV
+quit
+require 'webrat'
+pp ENV
+clear
+pp ENV
+quit
+require 'webrat'
+gem list
+pp gem
+pp gems
+pp gem
+Gem
+Gem.dir
+Gem.gem
+Gem.path
+Gem.methods
+Gem.ruby
+Gem.ui
+Gem.user_dir
+Gem.user_home
+Gem.config_file
+require 'rubygems'
+require 'webrat'
+Gem.path
+Gem.path = "/home/emallove/ethans-gem-repo/"
+Gem.path /home/emallove/ethans-gem-repo/
+Gem.path "/home/emallove/ethans-gem-repo/"
+pp Gem
+Gem.type
+Gem.class
+Gem.all_load_paths
+Gem.all_load_paths + "/home/emallove/ethans-gem-repo/"
+pp Gem.all_load_paths
+Gem.all_load_paths[] = "/home/emallove/ethans-gem-repo/"
+Gem.all_load_paths.push "/home/emallove/ethans-gem-repo/"
+pp Gem.all_load_paths
+Gem.all_load_paths = Gem.all_load_paths.push "/home/emallove/ethans-gem-repo/"^C
+Gem.all_load_paths = Gem.all_load_paths.push "/home/emallove/ethans-gem-repo/"
+Gem.
+Gem.config_file
+Gem.display
+Gem.ruby
+Gem.ruby_version
+Gem.type
+quit
+require 'webrat'
+pp Gem.all_load_paths
+quit
