@@ -71,3 +71,6 @@ proml
 export PAGER="less -i"
 
 alias ctags=/opt/local/bin/ctags
+
+# Wed Oct 31 10:59:46 EDT 2012
+export RAILS_ENV=development
