@@ -5,8 +5,10 @@ source $VIMRUNTIME/vimrc_example.vim
 " Thu Oct 18 13:30:44 EDT 2012
 " let $HOME = '/Users/emallove'
 
-source ~/vimfiles/plugin/AlignMapsPlugin.vim
-source ~/vimfiles/plugin/AlignPlugin.vim
+" source ~/vimfiles/plugin/AlignMapsPlugin.vim
+" source ~/vimfiles/plugin/AlignPlugin.vim
+source ~/vimfiles/autoload/Align.vim
+source ~/vimfiles/autoload/AlignMaps.vim
 " EAM: 2012.09.22
 " source ~/vimfiles/plugin/HTML.vim
 source ~/vimfiles/plugin/cecutil.vim
@@ -85,6 +87,8 @@ elseif &syntax == "html" || &syntax == "xml" || &syntax == "eruby"
   noremap <leader>c 0I<!-- A -->
 elseif &syntax == "ruby"
   noremap <leader>c 0I# 
+elseif &syntax == "css"
+  noremap <leader>c 0I/* A */
 endif
 
 " J is for JavaScript
