@@ -71,6 +71,7 @@ elseif &syntax == "cf"
   " Put the current line number in register "l", and print a cold fusion debug
   " message dumping the variable in the @" register
   noremap <leader>d :let @l = line(".") + 1oi<cfdump label=" eam_cfdump "%pa:"lpa ""pa = " var="#pa#" output="/tmp/eam-cf.log" format="text" abort="false" metainfo="yes" expand="yes" showUDFs="yes">
+  noremap <leader>t oi<cftrace category="eam_cftrace" var="pa" abort="no">
 endif
 
 " C is for Comment

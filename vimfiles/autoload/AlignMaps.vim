@@ -328,5 +328,3 @@ endfun
 let &cpo= s:keepcpo
 unlet s:keepcpo
 " vim: ts=4 fdm=marker
-
-1031 fewer lines

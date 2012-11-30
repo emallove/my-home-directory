@@ -1027,6 +1027,3 @@ call Align#AlignCtrl("default")
 let &cpo= s:keepcpo
 unlet s:keepcpo
 " vim: ts=4 fdm=marker
-
-1029 lines yanked
-1470 fewer lines
