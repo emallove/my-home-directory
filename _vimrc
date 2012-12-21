@@ -3,7 +3,6 @@ set nocompatible
 " source $VIMRUNTIME/mswin.vim
 source $VIMRUNTIME/vimrc_example.vim
 " source $VIMRUNTIME/mswin.vim
-let $HOME = '/Users/emallove'
 source ~/vimfiles/plugin/AlignMapsPlugin.vim
 source ~/vimfiles/plugin/AlignPlugin.vim
 " EAM: 2012.09.22
