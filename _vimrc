@@ -1,6 +1,9 @@
 set nocompatible
 " source $VIMRUNTIME/vimrc_example.vim
 " source $VIMRUNTIME/mswin.vim
+source $VIMRUNTIME/vimrc_example.vim
+" source $VIMRUNTIME/mswin.vim
+let $HOME = '/Users/emallove'
 source ~/vimfiles/plugin/AlignMapsPlugin.vim
 source ~/vimfiles/plugin/AlignPlugin.vim
 " EAM: 2012.09.22
@@ -42,6 +45,7 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 " worthwhile?
 " Thu Oct  4 11:50:55 EDT 2012
 " runtime ftplugin/man.vim
+runtime ftplugin/man.vim
 
 " Thu Oct  4 11:50:44 EDT 2012
 set number
@@ -90,3 +94,9 @@ function! MkSessionWithTimestamps(name)
   :execute l:cmd
 
 endfunction
+" everything after the ",d" was recorded into the q register
+" and pasted using "qp after the ",d" for the map setting!
+"
+" ,d - "d" is for debug
+" nmap <leader>d PI		puts "A = "opI		ap o
+nmap <leader>d oputs p0Elli__FILE__ + ":" + __LINE__.to_s + " A = "oap p
