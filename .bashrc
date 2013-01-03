@@ -26,8 +26,9 @@ PATH=$PATH:$HOME/bin
 # This solution was found here: http://www.starnet.com/xwin32kb/xterm_title
 unset PROMPT_COMMAND
 
-# Thu Oct 18 10:25:53 EDT 2012
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# enable Thu Oct 18 10:25:53 EDT 2012
+# disable Fri Dec 21 15:17:07 EST 2012
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 PATH=/opt/local/lib/postgresql90/bin:$PATH
 
@@ -97,9 +98,18 @@ function proml {
 }
 proml
 
-export GEM_HOME=/home/emallove/ethans-gem-repo/
-export GEM_PATH=/home/emallove/ethans-gem-repo/
+# Avoid this bundler error!
+#
+# $ bundle 
+# /opt/ruby-enterprise-1.8.7-2011.03/lib/ruby/site_ruby/1.8/rubygems/dependency.rb:247:in `to_specs': Could not find bundler (>= 0) amongst [] (Gem::LoadError)
+#   from /opt/ruby-enterprise-1.8.7-2011.03/lib/ruby/site_ruby/1.8/rubygems/dependency.rb:256:in `to_spec'
+#   from /opt/ruby-enterprise-1.8.7-2011.03/lib/ruby/site_ruby/1.8/rubygems.rb:1231:in `gem'
+#   from /opt/ruby-enterprise/bin/bundle:18
+# export GEM_HOME=/home/emallove/ethans-gem-repo/
+# export GEM_PATH=/home/emallove/ethans-gem-repo/
 
+unset GEM_HOME
+unset GEM_PATH
 
 export PAGER="less -i"
 
