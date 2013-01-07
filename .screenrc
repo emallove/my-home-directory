@@ -1,0 +1,8 @@
+
+# Wed Nov 21 21:19:39 EST 2012
+# From Sven Guckes's screenrc here:
+# http://www.guckes.net/Setup/screenrc
+# 
+# bufferfile:   The file to use for commands
+#               "readbuf" ('<') and  "writebuf" ('>'):
+bufferfile    $HOME/.screen_exchange

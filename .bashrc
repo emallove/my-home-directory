@@ -1,4 +1,34 @@
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+export PAGER="less -i"
+
+# Sun Sep 30 17:01:12 EDT 2012
+set -o vi
+
+export EDITOR=vim
+
+# Fri Oct  5 22:16:41 EDT 2012
+# PATH=$PATH:/opt/coldfusionmx7/bin
+
+# Sat Oct  6 10:37:23 EDT 2012
+PATH=$PATH:/opt/coldfusion9/bin
+PATH=$PATH:$HOME/bin
+
+# Tue Oct  9 12:04:47 EDT 2012
+# Allow user to change tab title (e.g., in iTerm2)
+# This solution was found here: http://www.starnet.com/xwin32kb/xterm_title
+unset PROMPT_COMMAND
+
+# enable Thu Oct 18 10:25:53 EDT 2012
+# disable Fri Dec 21 15:17:07 EST 2012
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 PATH=/opt/local/lib/postgresql90/bin:$PATH
 
@@ -67,6 +97,19 @@ function proml {
   PS1="$LIGHT_RED\u@$DEFAULT\h:$GREEN\w $BLUE\$(parse_git_branch) $DEFAULT\$ "
 }
 proml
+
+# Avoid this bundler error!
+#
+# $ bundle 
+# /opt/ruby-enterprise-1.8.7-2011.03/lib/ruby/site_ruby/1.8/rubygems/dependency.rb:247:in `to_specs': Could not find bundler (>= 0) amongst [] (Gem::LoadError)
+#   from /opt/ruby-enterprise-1.8.7-2011.03/lib/ruby/site_ruby/1.8/rubygems/dependency.rb:256:in `to_spec'
+#   from /opt/ruby-enterprise-1.8.7-2011.03/lib/ruby/site_ruby/1.8/rubygems.rb:1231:in `gem'
+#   from /opt/ruby-enterprise/bin/bundle:18
+# export GEM_HOME=/home/emallove/ethans-gem-repo/
+# export GEM_PATH=/home/emallove/ethans-gem-repo/
+
+unset GEM_HOME
+unset GEM_PATH
 
 export PAGER="less -i"
 

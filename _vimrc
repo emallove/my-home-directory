@@ -1,6 +1,10 @@
 set nocompatible
+" source $VIMRUNTIME/vimrc_example.vim
+" source $VIMRUNTIME/mswin.vim
 source $VIMRUNTIME/vimrc_example.vim
 " source $VIMRUNTIME/mswin.vim
+source ~/vimfiles/plugin/AlignMapsPlugin.vim
+source ~/vimfiles/plugin/AlignPlugin.vim
 
 " Thu Oct 18 13:30:44 EDT 2012
 " let $HOME = '/Users/emallove'
@@ -48,6 +52,7 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 " worthwhile?
 " Thu Oct  4 11:50:55 EDT 2012
+" runtime ftplugin/man.vim
 runtime ftplugin/man.vim
 
 " Thu Oct  4 11:50:44 EDT 2012
@@ -57,6 +62,46 @@ set number
 autocmd VimEnter * cscope add cscope.out
 autocmd VimEnter * set tags=./TAGS,TAGS
 
+" This adds :G <pattern> command to run the command from within Vim.
+" You can also limit searching to files matching a pattern (git will do the pattern matching):
+" :G <pattern> -- '*.c'
+"
+" http://stackoverflow.com/questions/2415237/techniques-in-git-grep-and-vim
+function! GitGrep(...)
+  let save = &grepprg
+  set grepprg=git\ grep\ -n\ $*
+  let s = 'grep'
+  for i in a:000
+    let s = s . ' ' . i
+  endfor
+  exe s
+  let &grepprg = save
+endfun
+command! -nargs=? G call GitGrep(<f-args>)
+
+set grepprg=/opt/local/bin/ack-5.12\ $*
+
+" Fri Oct 26 15:38:51 EDT 2012
+function! RemoveTerminalControlSequences()
+
+  :%s/\[4;36;1m//
+  :%s/\[0m\_s\+\[0m/ /g
+  :%s/\[4;35;1m//
+  :%s/\[0;1m/ /g
+  :%s/\[0m\_s\+/ /g
+
+endfunction
+
+function! MkSessionWithTimestamps(name)
+
+  :let l:datestamp = substitute(system("datestamp"), '\n$', "", "g")
+  :let l:cmd = ":mksession! \~/vim-sessions/" . a:name . "." . l:datestamp .  ".vim"
+  :let l:cmd .= " | "
+  :let l:cmd .= ":wviminfo! \~/vim-sessions/" . a:name . "." . l:datestamp . ".viminfo" 
+  :echo "Executing: " . l:cmd
+  :execute l:cmd
+
+endfunction
 " everything after the ",d" was recorded into the q register
 " and pasted using "qp after the ",d" for the map setting!
 
