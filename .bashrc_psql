@@ -1,0 +1,5 @@
+# Wed Nov 14 14:12:10 EST 2012
+# Special bashrc for psql environment variables
+
+export EDITOR='vim -c "se nowrap nostartofline"'
+export PAGER='vim - -c "se nowrap nostartofline"'

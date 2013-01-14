@@ -1,0 +1,50 @@
+ap @publisher_formulary
+pf = @publisher_formulary
+ap pf
+irb_history
+irb
+ap irb
+irb_context
+irb_hellp
+irb_help
+irb --help
+irb_help()
+irb_jobs
+irb_bindings
+irb_print_working_workspace
+irb_workspaces
+history
+    @state = @publisher_formulary.state.present? ? @publisher_formulary.state : State.new(:id => '', :name => 'National')
+j
+    health_plans = SitePlanStatus.get_plan_drug_status(@publisher_formulary)
+ap health_plans
+health_plans[1]
+health_plans[1].attributes
+ap health_plans[1].attributes
+@drugs
+@drugs = convert_drug_list_to_objects(drug_list)
+@publisher_template.spotlight_drug_ids
+    @publisher_template = @publisher_formulary.publisher_template
+mySP = Publisher::SpirivaController.new
+ap @publisher_formulary
+    health_plans = SitePlanStatus.get_plan_drug_status(@publisher_formulary)
+ap health_plans
+ap health_plans.size
+mySP.select_health_plans
+    @uhg_health_plan_ids = UhgHealthPlan.all.map(&:id)
+    @state = @publisher_formulary.state.present? ? @publisher_formulary.state : State.new(:id => '', :name => 'National')
+mySP.select_health_plans
+@publisher_formulary
+ap @publisher_formulary
+ap @publisher_formulary.state
+mySP.select_health_plans
+ap @publisher_formulary.state.present?
+mySP.select_health_plans
+ap mySP
+app.get '/publisher/spiriva_communicator/182633/select_health_plans'
+app.html_document.root
+app.html_document.root.to_s
+app.project_path(Project.first)
+app
+ap app
+ap app.session

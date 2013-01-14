@@ -1,0 +1,52 @@
+[user]
+	name = "Ethan Mallove"
+	email = emallove@yahoo.com
+
+[core]
+  excludesfile = ~/.gitignore
+
+[color]
+  ui = true
+  status = auto
+  branch = auto
+  pager = true
+  diff = auto
+
+[color "branch"]
+  current = cyan reverse
+  local = cyan
+  remote = green
+
+[color "diff"]
+  meta = cyan bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = cyan
+  changed = green
+  untracked = cyan
+
+[alias]
+  st = status
+  ci = commit
+  cia = commit -a
+  cim = commit -m
+  ciam = commit -a -m
+  cii = commit --interactive
+  co = checkout
+  b = branch
+  r = remote
+  pl = pull
+  ps = push
+  pso = push origin master
+  psa = push --all
+  d = diff
+  l = log
+  sa = stash apply
+  ss = stash create
+[branch]
+	autosetuprebase = always
+[grep]
+	extendRegexp = true

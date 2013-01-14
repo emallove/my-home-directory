@@ -1,0 +1,12 @@
+# :sources: A YAML array of remote gem repositories to install gems from
+# :verbose: Verbosity of the gem command.  false, true, and :really are the
+#           levels
+# :update_sources: Enable/disable automatic updating of repository metadata
+# :backtrace: Print backtrace when RubyGems encounters an error
+# :gempath: The paths in which to look for gems
+# gem_command: A string containing arguments for the specified gem command
+
+gemhome: /home/emallove/.gems
+gempath:
+ - /home/emallove/ethans-gem-repo/
+ - /home/emallove/.gems
