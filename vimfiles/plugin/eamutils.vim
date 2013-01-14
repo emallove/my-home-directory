@@ -82,11 +82,8 @@ autocmd FocusLost * :   write
 autocmd FocusLost * :   echo "Autosaved file while you were absent"
 autocmd FocusLost * : endif
 
-
-
 " Insert dateTime
-nnoremap <F5> "=strftime("%a, %d %b %Y %H:%M:%S")<CR>PI----- o
-
+nnoremap <F4> "=strftime("%a, %d %b %Y %H:%M:%S")<CR>PI----- o
 
 "
 " FIXME:
