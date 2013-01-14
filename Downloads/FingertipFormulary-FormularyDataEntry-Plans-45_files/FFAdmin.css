@@ -1017,3 +1017,8 @@ td.editlft {
 td.editrgt {padding:5px;}
 
 .alignrgt {text-align:right;}
+
+strong {
+  color: red;
+  background-color: yellow;
+}
