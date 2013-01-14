@@ -1,0 +1,11 @@
+[ui]
+merge = vimdiff
+
+[merge-tools]
+vimdiff.executable = mvim
+vimdiff.args = -d $base $local $output $other +close +close
+
+[ui]
+# username data to appear in commits
+username="Ethan Mallove <emallove@yahoo.com>"
+editor = vim
