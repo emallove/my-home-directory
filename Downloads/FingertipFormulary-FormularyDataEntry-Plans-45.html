@@ -66,6 +66,15 @@ a.excbutS
 td.WhiH {background-color : red; font-weight:bold; font-family: verdana; font-size: 18px;  color: white;}
 td.Whi {background-color : red; font-weight:bold; font-family: verdana; font-size: 12px;  color: white;}
 -->
+
+
+  /* EAM 2013.01.11 */
+  table.scrollable thead tr {
+    left: 0; top: 0;
+    position: absolute;
+    }
+
+
 </style>	
 
 <script type="text/javascript" language="JavaScript">
@@ -239,7 +248,7 @@ function openWindow(winSrc,w,h) {
 
 <body>
 	
-			<div id="dic_bubble" class="selection_bubble" style="z-index:9999;" fetching="false"></div><table border="0" cellpadding="0" cellspacing="0" class="hdr">
+    <div id="dic_bubble" class="selection_bubble" style="z-index:9999;" fetching="false"></div><table border="0" cellpadding="0" cellspacing="0" class="hdr">
 				<tbody><tr>
 					<td valign="middle" id="ff_logo"><img src="./FingertipFormulary-FormularyDataEntry-Plans-45_files/ff_logo.gif" alt="Fingertip Formulary" border="0"></td>
 					<td valign="middle" id="user_label"> 
@@ -356,7 +365,12 @@ function openWindow(winSrc,w,h) {
 	<input type="hidden" name="drugid" value="1137">
 	<input type="hidden" name="dlm" value="{ts &#39;2013-01-11 15:57:30&#39;}">
 	<input type="hidden" name="advanceEntry" value="false">
-	<table border="0" cellspacing="0" cellpadding="3">
+
+<!-- EAM 2013.01.11 -->
+<div id="dic_bubble" class="selection_bubble" style="z-index: 9999; visibility: hidden;" fetching="false"></div><div class="scrollableContainer">
+<div class="scrollingArea" style="max-height:500px; overflow:auto;">
+
+	<table class="scrollable" border="0" cellspacing="0" cellpadding="3">
 
     
     
