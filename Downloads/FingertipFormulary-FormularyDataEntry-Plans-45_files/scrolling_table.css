@@ -114,3 +114,81 @@ div.scrollTableContainer select	{
 .cfdebug {
   /* display: none; */
 }
+
+#topOrangeHeaderRow1:nth-child(2) {
+  width: 1400px;
+}
+
+.scrolling-table-health-plan-td {
+  width: 40px;
+}
+
+.scrolling-table-notes-td {
+  width: 200px;
+}
+
+.scrolling-table-tier-td {
+  width: 260px;
+}
+
+.scrolling-table-restrictions-td {
+  width: 116px;
+}
+
+.scrolling-table-pref-td {
+  width: 60px;
+}
+
+.scrolling-table-sp-td {
+  width: 27px;
+}
+
+.scrolling-table-reason-code-td {
+  width: 480px;
+}
+
+.scrolling-table-restriction-comments-td {
+  width: 350px;
+}
+
+.scrolling-table-nbsp-td {
+  width: 24px;
+}
+
+
+/* 
+ * I guess nth-child selectors aren't widely supported? 
+ *    http://webdesign.about.com/od/styleproperties/p/nth-child.htm
+ *
+ *
+
+tr:nth-child(2) {
+  width: 1400px;
+}
+
+tbody > tr:nth-child(1) {
+  width: 20px;
+}
+tbody > tr:nth-child(2) {
+  width: 220px;
+}
+tbody > tr:nth-child(3) {
+  width: 300px;
+}
+tbody > tr:nth-child(4) {
+  width: 50px;
+}
+tbody > tr:nth-child(5) {
+  width: 80px;
+}
+tbody > tr:nth-child(6) {
+  width: 20px;
+}
+tbody > tr:nth-child(7) {
+  width: 200px;
+}
+tbody > tr:nth-child(8) {
+  width: 200px;
+}
+
+*/

@@ -670,7 +670,6 @@ margin: 0;
 padding: 0;
 cursor: default;
 list-style-type: none;
-position: absolute;
 border-top: 4px solid #373737;
 background-color: #373737;
 text-align: left;
@@ -779,7 +778,6 @@ padding-left: 17px;
 
 .popup {
 
-	position: absolute;
 
 	padding: 1em;
 
