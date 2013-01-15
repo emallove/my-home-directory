@@ -115,10 +115,6 @@ div.scrollTableContainer select	{
   /* display: none; */
 }
 
-#topOrangeHeaderRow1:nth-child(2) {
-  width: 1400px;
-}
-
 .scrolling-table-health-plan-td {
   width: 40px;
 }
@@ -127,20 +123,21 @@ div.scrollTableContainer select	{
   width: 200px;
 }
 
+/* based on colspan=9 * 25px * 25;' */
 .scrolling-table-tier-td {
-  width: 260px;
+  width: 225px;
 }
 
 .scrolling-table-restrictions-td {
-  width: 116px;
+  width: 100px;
 }
 
 .scrolling-table-pref-td {
-  width: 60px;
+  width: 50px;
 }
 
 .scrolling-table-sp-td {
-  width: 27px;
+  width: 25px;
 }
 
 .scrolling-table-reason-code-td {
@@ -152,7 +149,7 @@ div.scrollTableContainer select	{
 }
 
 .scrolling-table-nbsp-td {
-  width: 24px;
+  width: 25px;
 }
 
 
