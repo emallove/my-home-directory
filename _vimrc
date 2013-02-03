@@ -208,3 +208,10 @@ command! -range=% RemoveDiacritics call s:RemoveDiacritics(<line1>, <line2>)
 
 " Various and sundry strings that I need again and again
 let @z = '<cftrace category="eam_cftrace" abort="no" text="#GetFunctionCalledName()#">'
+
+" Tim Pope's Gundo plugin
+call pathogen#infect() 
+nnoremap <F5> :GundoToggle<CR>
+
+" Store some frequently used tracing statements
+let @r = "Rails.logger.info \"eam log \" + __FILE__ + \":\" + __LINE__.to_s + \" \" + __method__.to_s"
