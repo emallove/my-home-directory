@@ -84,17 +84,34 @@ function parse_git_branch {
 }
 
 function proml {
-  local        BLUE="\[\033[0;34m\]"
   # OPTIONAL - if you want to use any of these other colors:
-  local         RED="\[\033[0;31m\]"
-  local   LIGHT_RED="\[\033[1;31m\]"
-  local       GREEN="\[\033[0;32m\]"
-  local LIGHT_GREEN="\[\033[1;32m\]"
-  local       WHITE="\[\033[1;37m\]"
-  local  LIGHT_GRAY="\[\033[0;37m\]"
+      local                    RED="\[\033[0;31m\]"
+      local                   BLUE="\[\033[0;34m\]"
+      local                   CYAN="\[\033[0;36m\]"
+      local                   RED="\[\033[0;31m\]"
+      local                  BLACK="\[\033[0;30m\]"
+      local                  BLUE="\[\033[0;34m\]"
+      local                  BROWN="\[\033[0;33m\]"
+      local                  GREEN="\[\033[0;32m\]"
+      local                  WHITE="\[\033[1;37m\]"
+      local                 GREEN="\[\033[0;32m\]"
+      local                 PURPLE="\[\033[0;35m\]"
+      local                 WHITE="\[\033[1;37m\]"
+      local                 YELLOW="\[\033[1;33m\]"
+      local              DARK_GRAY="\[\033[1;30m\]"
+      local              LIGHT_RED="\[\033[1;31m\]"
+      local             LIGHT_BLUE="\[\033[1;34m\]"
+      local             LIGHT_CYAN="\[\033[1;36m\]"
+      local             LIGHT_GRAY="\[\033[0;37m\]"
+      local             LIGHT_RED="\[\033[1;31m\]"
+      local            LIGHT_GRAY="\[\033[0;37m\]"
+      local            LIGHT_GREEN="\[\033[1;32m\]"
+      local           LIGHT_GREEN="\[\033[1;32m\]"
+      local           LIGHT_PURPLE="\[\033[1;35m\]"
+
   # END OPTIONAL
   local     DEFAULT="\[\033[0m\]"
-  PS1="$LIGHT_RED\u@$DEFAULT\h:$GREEN\w $BLUE\$(parse_git_branch) $DEFAULT\$ "
+  PS1="$LIGHT_RED\u@$BROWN\h:$GREEN\w $CYAN\$(parse_git_branch) $DEFAULT\$ "
 }
 proml
 

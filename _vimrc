@@ -190,3 +190,28 @@ autocmd! BufEnter quickfix :setlocal winheight=99 nowinfixheight
 " MacVim seems to default to a dark colorscheme, instead of the preferable
 " light one
 colorscheme default 
+
+set background=light
+
+
+" Remove diacritical signs from characters in specified range of lines.
+" Examples of characters replaced: á -> a, ç -> c, Á -> A, Ç -> C.
+function! s:RemoveDiacritics(line1, line2)
+  let diacs = 'āáâãàçéêíóôõüúǐīè'  " lowercase diacritical signs
+  let repls = 'aaaaaceeiooouuiie'  " corresponding replacements
+  let diacs .= toupper(diacs)
+  let repls .= toupper(repls)
+  let all = join(getline(a:line1, a:line2), "\n")
+  call setline(a:line1, split(tr(all, diacs, repls), "\n"))
+endfunction
+command! -range=% RemoveDiacritics call s:RemoveDiacritics(<line1>, <line2>)
+
+" Various and sundry strings that I need again and again
+let @z = '<cftrace category="eam_cftrace" abort="no" text="#GetFunctionCalledName()#">'
+
+" Tim Pope's Gundo plugin
+call pathogen#infect() 
+nnoremap <F5> :GundoToggle<CR>
+
+" Store some frequently used tracing statements
+let @r = "Rails.logger.info \"eam log \" + __FILE__ + \":\" + __LINE__.to_s + \" \" + __method__.to_s"
