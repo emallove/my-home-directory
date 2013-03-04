@@ -215,3 +215,8 @@ nnoremap <F5> :GundoToggle<CR>
 
 " Store some frequently used tracing statements
 let @r = "Rails.logger.info \"eam log \" + __FILE__ + \":\" + __LINE__.to_s + \" \" + __method__.to_s"
+
+" Tired of typing :set winheight=99 in the quickfix window over and over
+"
+" Don't install it in the ~/_vimrc, install it in the brain!
+" nmap  :set winheight=99<CR>
