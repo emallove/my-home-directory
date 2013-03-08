@@ -117,6 +117,11 @@ elseif &syntax == "cf"
   " message dumping the variable in the @" register
   noremap <leader>d :let @l = line(".") + 1oi<cfdump label=" eam_cfdump "%pa:"lpa ""pa = " var="#pa#" output="/tmp/eam-cf.log" format="text" abort="false" metainfo="yes" expand="yes" showUDFs="yes">
   noremap <leader>t oi<cftrace category="eam_cftrace" var="pa" abort="no">
+
+elseif &syntax == "java"
+
+  noremap <leader>d :let @l = line(".") + 1oiSystem.out.println("\n"%pa:"lpa ""pa = " + pa );
+
 endif
 
 " C is for Comment
@@ -135,6 +140,8 @@ elseif &syntax == "ruby"
   noremap <leader>c 0I# 
 elseif &syntax == "css"
   noremap <leader>c 0I/* A */
+elseif &syntax == "python"
+	set noexpandtab
 endif
 
 " J is for JavaScript
@@ -220,3 +227,8 @@ let @r = "Rails.logger.info \"eam log \" + __FILE__ + \":\" + __LINE__.to_s + \"
 "
 " Don't install it in the ~/_vimrc, install it in the brain!
 " nmap  :set winheight=99<CR>
+"
+
+" Fri Mar  8 13:40:59 EST 2013
+" Prevent the Quickfix window from minimizing to a single row
+autocmd BufRead *Quickfix* :set nowinfixheight
