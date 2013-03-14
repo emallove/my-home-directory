@@ -232,3 +232,6 @@ let @r = "Rails.logger.info \"eam log \" + __FILE__ + \":\" + __LINE__.to_s + \"
 " Fri Mar  8 13:40:59 EST 2013
 " Prevent the Quickfix window from minimizing to a single row
 autocmd BufRead *Quickfix* :set nowinfixheight
+
+" Enable spell-checking for git commit messages
+autocmd BufRead COMMIT_EDITMSG :set spell
