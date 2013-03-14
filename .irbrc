@@ -15,8 +15,14 @@ rescue LoadError => err
   warn "Couldn't load Wirble: #{err}"
 end
 
-IRB.conf[:SAVE_HISTORY] = 200
+IRB.conf[:SAVE_HISTORY] = 2000
 IRB.conf[:HISTORY_FILE] = '/home/emallove/.irb-history'
+IRB.conf[:EVAL_HISTORY] = 200
+
+# Emits a ton of verbose output from $HOME/.rvm/rubies
+#
+# IRB.conf[:USE_TRACER] = true
+
 
 ARGV.concat [ "--readline",
               "--prompt-mode",
