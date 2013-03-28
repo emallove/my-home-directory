@@ -1,0 +1,68 @@
+*powershellCall.txt* Plugin for PowerShell interaction in Vim
+
+                         powershellCall.Vim Plugin ~
+
+    |powershellCommands|
+        |:Phs|
+        |:Phsv|
+        |powerShellBangBang|
+
+    |powershellConfiguration|
+        |g:powershellLoadProfile|
+        |g:powershellFileEncoding|
+        |g:powershellInputTempfilename|
+        |g:powershellInputTempfilename|
+
+==============================================================================
+*powershellCommands*
+Powershell Commands ~
+                                                                        *:Phs*
+<range>Phs
+                Execute command in the range given on the command line and 
+                paste the result back into the buffer.
+                                                                       *:Phsv*
+<visual>Phsv    
+                Execute the visual selection and paste the result back into
+                the buffer.
+                                                          *powerShellBangBang*
+§§
+                Has the same functionality as |!!| but start a powershell
+                command instead of a normal shell one. Prepare a commandline
+                to execute visual selection curor line with powershell
+==============================================================================
+*powershellConfiguration*
+Configuration variables ~
+    
+The powershell call is rather complex, so is the configuration, you can try to
+tweak them in case of problem.
+
+                                                     *g:powershellLoadProfile*
+  g:powershellLoadProfile
+     If you want the powershell to load your profile when evaluating
+     your snippets from vim. Default is 0 (no profile loaded).
+
+                                                    *g:powershellFileEncoding*
+  g:powershellFileEncoding
+     Let you specify the encoding used by the powershell as output.
+     The default value is ASCII.
+     You can use the following values :
+         - ASCII
+         - Unicode (UTF-16)
+         - UTF7
+         - UTF8
+         - UTF32
+         - BigEndianUnicode
+         - Default
+         - OEM
+
+                                               *g:powershellInputTempfilename*
+  g:powershellInputTempfilename
+     If you want to change the name of the script temp file name.
+     default is 'blablain'
+
+                                               *g:powershellInputTempfilename*
+  g:powershellInputTempfilename
+     If you want to change the name of the output temp file. Default
+     is 'blablaout'.
+
+ vim:tw=78:ts=8:ft=help:norl:
