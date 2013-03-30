@@ -85,7 +85,6 @@ if !hasmapto('<Plug>AM_ascom')|map! <unique> <Leader>ascom	<Plug>AM_ascom|endif
 if !hasmapto('<Plug>AM_adec') |map! <unique> <Leader>adec	<Plug>AM_adec|endif
 if !hasmapto('<Plug>AM_adef') |map! <unique> <Leader>adef	<Plug>AM_adef|endif
 if !hasmapto('<Plug>AM_afnc') |map! <unique> <Leader>afnc	<Plug>AM_afnc|endif
-if !hasmapto('<Plug>AM_afnc') |map! <unique> <Leader>afnc	<Plug>AM_afnc|endif
 
 " Number alignment maps: {{{2
 if !hasmapto('<Plug>AM_aunum')|map! <unique> <Leader>aunum	<Plug>AM_aunum|endif
