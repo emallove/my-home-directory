@@ -60,7 +60,7 @@ set number
 
 " Sat Oct 13 11:24:56 PDT 2012
 autocmd VimEnter * cscope add cscope.out
-autocmd VimEnter * set tags=./TAGS,TAGS
+autocmd VimEnter * set tags=./TAGS,./TAGS,./tags,./ctags,./etags,./rtags
 
 " This adds :G <pattern> command to run the command from within Vim.
 " You can also limit searching to files matching a pattern (git will do the pattern matching):
@@ -235,3 +235,8 @@ autocmd BufRead *Quickfix* :set nowinfixheight
 
 " Enable spell-checking for git commit messages
 autocmd BufRead COMMIT_EDITMSG :set spell
+
+
+" Sun Mar 31 13:24:38 EDT 2013
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+helptags ~/.vim/bundle/ctrlp.vim/doc
