@@ -72,7 +72,7 @@ export LSCOLORS=Gxfxcxdxbxegedabagacad
 source ~/.git-completion.bash
 
 # Wed Oct  3 11:26:59 EDT 2012
-export EDITOR=mvim
+export EDITOR=vim
 
 # GIT SAYS MVIM LEAVES AN EMPTY COMMIT MESSAGE, AND FAILS!
 export GIT_EDITOR=vim
