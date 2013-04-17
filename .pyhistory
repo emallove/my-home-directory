@@ -8,3 +8,16 @@ import\040readline
 6
 exit
 exit()
+exit
+d\040=\040dict()
+d[45]\040=\0404
+d
+d[44]\040=\040"234lkj"
+d["234"]\040=\040"00234lkj"
+d
+f\040=\040open('tarfile.txt')
+for\040line\040in\040f.readlines():
+\040\040\040\040print\040line
+f.close()
+f\040=\040open('c0001')
+exit

@@ -19,8 +19,7 @@ hardstatus string "%{.4W}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
 # shelltitle ''
 
 # Start a bunch of windows by default
-# screen -t scratch 0
-# screen -t git 1
-# screen -t vi 2 vi
-# screen -t server 2
-# screen -t psql 4
+screen -t _bash 0
+screen -t _console 2 bundle exec rails console
+screen -t _server 3 bundle exec rails server
+screen -t _psql 4 # env -i EDITOR='vim -c "se nowrap nostartofline syntax=sql mouse="' PAGER='vim - -c "se nowrap nostartofline"' psql -d ff_dev -U postgres

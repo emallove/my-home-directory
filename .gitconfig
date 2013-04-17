@@ -46,8 +46,8 @@
   l = log
   sa = stash apply
   ss = stash create
-[branch]
-	autosetuprebase = always
+# [branch]
+  # autosetuprebase = always
 [grep]
 	extendRegexp = true
 [mergetool "vim"]
