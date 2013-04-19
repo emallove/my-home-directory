@@ -141,3 +141,4 @@ export RAILS_ENV=development
 
 export HISTSIZE=5000
 export HISTFILE=~/.bash_history
+export PYTHONSTARTUP=$HOME/.pystartup

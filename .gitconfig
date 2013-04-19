@@ -50,3 +50,15 @@
 	autosetuprebase = always
 [grep]
 	extendRegexp = true
+[mergetool "vim"]
+	cmd = vim -d \\\"$BASE\\\" \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$MERGED\\\"
+[mergetool "filemerge"]
+	cmd = vim -d \\\"$BASE\\\" \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$MERGED\\\"
+[mergetool "p4merge"]
+	cmd = mvim -d \\\"$BASE\\\" \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$MERGED\\\"
+[mergetool]
+	p4merge = mvim -d \\\"$BASE\\\" \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$MERGED\\\"
+[merge]
+	tool = gvimdiff
+[mergetool "gvimdiff"]
+	cmd = mvim -d \\\"$BASE\\\" \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$MERGED\\\"
