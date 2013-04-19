@@ -21,6 +21,10 @@ export EDITOR=vim
 PATH=$PATH:/opt/coldfusion9/bin
 PATH=$PATH:$HOME/bin
 
+# Add "service" to PATH
+PATH=$PATH:/sbin
+PATH=$PATH:/usr/sbin
+
 # Tue Oct  9 12:04:47 EDT 2012
 # Allow user to change tab title (e.g., in iTerm2)
 # This solution was found here: http://www.starnet.com/xwin32kb/xterm_title
@@ -134,3 +138,6 @@ alias ctags=/opt/local/bin/ctags
 
 # Wed Oct 31 10:59:46 EDT 2012
 export RAILS_ENV=development
+
+export HISTSIZE=5000
+export HISTFILE=~/.bash_history
